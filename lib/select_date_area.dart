@@ -28,7 +28,7 @@ class _SelectDateAreaState extends State<SelectDateArea> {
       setState(() {
         selectedDateTime = selectedDate;
       });
-      widget.onDateSelected(selectedDate); // 親ウィジェットに日付を通知
+      widget.onDateSelected(selectedDate);
     }
   }
 

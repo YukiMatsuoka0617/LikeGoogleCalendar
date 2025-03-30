@@ -50,7 +50,7 @@ class _MyHomePageState extends State<MyHomePage> {
             TitleArea(),
             AreaDivider(),
             AllDayArea(
-              showTimeSelectArea: showTimeSelectArea,
+              showTimeSelectArea: !showTimeSelectArea,
               onChanged: (value) {
                 setState(() {
                   showTimeSelectArea = !value;
