@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 class AllDayArea extends StatelessWidget {
   const AllDayArea({
     super.key,
-    required this.showTimeSelectArea, // 親ウィジェットから状態を渡す
-    required this.onChanged, // 状態変更時のコールバックを受け取る
+    required this.showTimeSelectArea,
+    required this.onChanged,
   });
 
   final bool showTimeSelectArea;
