@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_calender/all_day_area.dart';
 import 'package:flutter_application_calender/area_divider.dart';
+import 'package:flutter_application_calender/area_title_divider.dart';
 import 'package:flutter_application_calender/select_date_area.dart';
 import 'package:flutter_application_calender/select_time_area.dart';
 import 'package:flutter_application_calender/title_area.dart';
@@ -47,8 +48,9 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Center(
         child: Column(
           children: [
+            titleDivider('User 1'),
             TitleArea(),
-            AreaDivider(),
+            areaDivider(),
             AllDayArea(
               showTimeSelectArea: !showTimeSelectArea,
               onChanged: (value) {
@@ -57,16 +59,16 @@ class _MyHomePageState extends State<MyHomePage> {
                 });
               },
             ),
-            AreaDivider(),
+            areaDivider(),
             SelectDateArea(
               onDateSelected: (DateTime selectedDate) {},
             ),
-            AreaDivider(),
+            areaDivider(),
             if (showTimeSelectArea) ...[
               TimeSelectArea(
                 onTimeSelected: (TimeOfDay selectedTime) {},
               ),
-              AreaDivider(),
+              areaDivider(),
             ],
           ],
         ),
