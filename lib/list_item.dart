@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 Widget listItem(
   IconData? icon,
-  String text,
-  Widget widget,
+  Widget centerWidget,
+  Widget rightWidget,
 ) {
   return Padding(
     padding: EdgeInsets.symmetric(
@@ -20,9 +20,9 @@ Widget listItem(
             size: 30,
           ),
         ),
-        Text(text),
+        centerWidget,
         const Spacer(),
-        widget,
+        rightWidget,
       ],
     ),
   );
