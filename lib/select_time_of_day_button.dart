@@ -4,10 +4,10 @@ class SelectTimeOfDayButton extends StatefulWidget {
   const SelectTimeOfDayButton({super.key});
 
   @override
-  State<StatefulWidget> createState() => _SelectTimeOfDayButton();
+  State<StatefulWidget> createState() => _SelectTimeOfDayButtonState();
 }
 
-class _SelectTimeOfDayButton extends State<SelectTimeOfDayButton> {
+class _SelectTimeOfDayButtonState extends State<SelectTimeOfDayButton> {
   TimeOfDay selectedTimeOfDay = TimeOfDay.now();
 
   // 時間選択処理
